@@ -1,0 +1,120 @@
+.header {
+  height: 34vw;
+  margin: 30px auto;
+  background: url('/header_img.png') no-repeat;
+  background-size: contain;
+  position: relative;
+}/* Container styles for main content */
+
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height to ensure content is always visible */
+
+}
+
+/* Main content styles */
+.about-content {
+    max-width: 90%; /* Adjusted for responsiveness */
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeInUp 1s ease;
+}
+
+/* Heading styles for main content */
+.about-content h1 {
+    font-size: 3rem; /* Adjusted for responsiveness */
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Paragraph styles for main content */
+.about-content p {
+    font-size: 1.2rem; /* Adjusted for responsiveness */
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Container styles for mission, vision, and goals */
+.mission-vision-goals-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure cards wrap to the next line if space is insufficient */
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+/* Card styles */
+.mission-card,
+.vision-card,
+.goals-card {
+    width: 30%; /* Adjust width as needed */
+    max-width: 300px; /* Maximum width for better responsiveness */
+    margin-bottom: 20px; /* Added space between cards */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    animation: fadeInUp 1s ease;
+   
+}
+.mission-card {
+    background-color: #ffcccb; /* Light red */
+  }
+  
+  .vision-card {
+    background-color: #add8e6; /* Light blue */
+  }
+  
+  .goals-card {
+    background-color: #90ee90; /* Light green */
+  }
+  
+
+/* Card hover effect */
+.mission-card:hover,
+.vision-card:hover,
+.goals-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Heading styles for cards */
+.mission-card h2,
+.vision-card h2,
+.goals-card h2 {
+    font-size: 1.5rem; /* Adjusted for responsiveness */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styles for cards */
+.mission-card p,
+.vision-card p,
+.goals-card p {
+    font-size: 1rem; /* Adjusted for responsiveness */
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Media Query for responsiveness */
+@media only screen and (max-width: 768px) {
+    .about-content {
+        padding: 20px; /* Adjusted padding for smaller screens */
+    }
+
+    .mission-card,
+    .vision-card,
+    .goals-card {
+        width: 45%; 
+    }
+}
